@@ -1,6 +1,10 @@
 require('dotenv').config();
 const app = require('./src/app');
 const connectDB = require('./src/config/db');
+const { configureCloudinary } = require('./src/config/cloudinary');
+
+// Initialise Cloudinary (no-op + warning if credentials are missing)
+configureCloudinary();
 
 const PORT = process.env.PORT || 5000;
 

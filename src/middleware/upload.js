@@ -16,7 +16,9 @@ const CLOUDINARY_CONFIGURED =
   process.env.CLOUDINARY_CLOUD_NAME &&
   process.env.CLOUDINARY_CLOUD_NAME !== 'REPLACE_ME' &&
   process.env.CLOUDINARY_API_KEY &&
-  process.env.CLOUDINARY_API_KEY !== 'REPLACE_ME';
+  process.env.CLOUDINARY_API_KEY !== 'REPLACE_ME' &&
+  process.env.CLOUDINARY_API_SECRET &&
+  process.env.CLOUDINARY_API_SECRET !== 'REPLACE_ME';
 
 // Allowed file types
 const ALLOWED_MIME = [
